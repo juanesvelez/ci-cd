@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS UserDB;
+
+USE UserDB;
+
+CREATE TABLE IF NOT EXISTS Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'Q1w2e3r4';
+flush privileges;

@@ -1,0 +1,30 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend  # Ruta al directorio del backend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=Q1w2e3r4
+      - DB_DATABASE=UserDB
+    networks:
+      - my-network
+
+  db:
+    image: mysql:8.0
+    environment:
+    - MYSQL_ROOT_PASSWORD=Q1w2e3r4
+    - MYSQL_DATABASE=UserDB
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - my-network
+
+networks:
+  my-network:
