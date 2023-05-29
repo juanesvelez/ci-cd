@@ -1,4 +1,5 @@
 
+
 # CI-CD project
 
 Este proyecto es una aplicación web que implementa un sistema de registro y inicio de sesión utilizando tecnologías como Node.js, MySQL y Docker. Proporciona una API para registrar usuarios y realizar el inicio de sesión con validación de credenciales.
@@ -30,12 +31,38 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
 
     docker-compose up
 
-Esto iniciará los contenedores de la base de datos MySQL y el backend de la aplicación.
+    Esto iniciará los contenedores de la base de datos MySQL y el backend de la aplicación.
 
 6. Una vez que los contenedores estén en funcionamiento, podrás acceder a la aplicación desde postman en la siguiente dirección:
 
     http://localhost:3000
+
+	Ejemplo de uso:	
+	
+    1. Este endpoint es usado parara realizar la creacion de usuario http://localhost:3000/register.
+
+	
+
+			{
+
+			"email":  "juanesvelez@otro.com",
+
+			"password":  "clavesupersecret"
+
+			}    
     
+    2. Este endpoint es usado para el inicio de sesion del usuario
+	    http://localhost:3000/login
+		
+				{
+
+			"email":  "juanesvelez@otro.com",
+
+			"password":  "clavesupersecret"
+
+			}    
+		
+ 
     
  ## Video explicativo
     
