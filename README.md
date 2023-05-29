@@ -66,8 +66,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
 
 			}    
 		
-  Salida
-   <img width="1030" alt="image" src="https://github.com/juanesvelez/ci-cd/assets/36514611/ad5846df-fe91-4659-ac29-4a609136a881">
+ 	Salida
+ 	<img width="1030" alt="image" src="https://github.com/juanesvelez/ci-cd/assets/36514611/ad5846df-fe91-4659-ac29-4a609136a881">
 
  ## Video explicativo
     
