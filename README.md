@@ -41,6 +41,5 @@ Esto iniciará los contenedores de la base de datos MySQL y el backend de la apl
     
     https://poligran-my.sharepoint.com/:v:/g/personal/juvelezm3_poligran_edu_co/Eb-lVHBRNfxGm8qIlSZG8VkBB4BRo9bK8rSJgKcMrZgHEA?e=SZEzli
     
-## Colaboradores
 
  
