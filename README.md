@@ -54,7 +54,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
     2. Este endpoint es usado para el inicio de sesion del usuario
 	    http://localhost:3000/login
 		
-				{
+			{
 
 			"email":  "juanesvelez@otro.com",
 
