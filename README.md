@@ -32,7 +32,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
 
 Esto iniciará los contenedores de la base de datos MySQL y el backend de la aplicación.
 
-6. Una vez que los contenedores estén en funcionamiento, podrás acceder a la aplicación desde tu navegador web en la siguiente dirección:
+6. Una vez que los contenedores estén en funcionamiento, podrás acceder a la aplicación desde postman en la siguiente dirección:
 
     http://localhost:3000
     
