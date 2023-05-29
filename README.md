@@ -51,6 +51,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
 
 			}    
     
+    <img width="1272" alt="image" src="https://github.com/juanesvelez/ci-cd/assets/36514611/bfd46f50-5f4f-4db6-97d0-1907b81ff0a4">
+
     2. Este endpoint es usado para el inicio de sesion del usuario
 	    http://localhost:3000/login
 		
@@ -63,7 +65,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
 			}    
 		
  
-    
+    <img width="1030" alt="image" src="https://github.com/juanesvelez/ci-cd/assets/36514611/ad5846df-fe91-4659-ac29-4a609136a881">
+
  ## Video explicativo
     
     https://poligran-my.sharepoint.com/:v:/g/personal/juvelezm3_poligran_edu_co/Eb-lVHBRNfxGm8qIlSZG8VkBB4BRo9bK8rSJgKcMrZgHEA?e=SZEzli
