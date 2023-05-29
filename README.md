@@ -1,5 +1,5 @@
 
-# CI-CD proyect
+# CI-CD project
 
 Este proyecto es una aplicación web que implementa un sistema de registro y inicio de sesión utilizando tecnologías como Node.js, MySQL y Docker. Proporciona una API para registrar usuarios y realizar el inicio de sesión con validación de credenciales.
 
@@ -40,3 +40,7 @@ Esto iniciará los contenedores de la base de datos MySQL y el backend de la apl
  ## Video explicativo
     
     https://poligran-my.sharepoint.com/:v:/g/personal/juvelezm3_poligran_edu_co/Eb-lVHBRNfxGm8qIlSZG8VkBB4BRo9bK8rSJgKcMrZgHEA?e=SZEzli
+    
+## Colaboradores
+
+ 
