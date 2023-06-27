@@ -10,7 +10,7 @@ class BackendTestCase(unittest.TestCase):
 
     def setUp(self):
         # Configurar la URL base para las solicitudes
-        self.base_url = os.getenv("BASE_URL", "http://localhost:3000")
+        self.base_url = os.getenv("BASE_URL", "http://db:3000")
 
     def random_email(self):
         # Generar un email aleatorio
