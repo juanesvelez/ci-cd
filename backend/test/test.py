@@ -64,7 +64,7 @@ class BackendTestCase(unittest.TestCase):
             if response.status_code == 200:
                 self.assertEqual(response.json()["message"], "Inicio de sesión exitoso")
                 print(f"Inicio de sesión exitoso para el usuario: {usuario['email']}")
-
+    ## 
     def test_inicio_sesion_invalido(self):
         email = "test@example.com"
         password = "wrongpassword"
