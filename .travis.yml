@@ -10,7 +10,7 @@ before_install:
   - sleep 10
 
 install:
-  - pip3 install -r backend/test/requirements.txt
+  - pip install -r backend/test/requirements.txt
 
 script:
-  - python3 backend/test/test.py
+  - python backend/test/test.py
