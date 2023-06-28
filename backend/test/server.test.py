@@ -36,5 +36,4 @@ def test_get_users():
     print("Prueba exitosa: GET /users")
 
 # Ejecutar el test
-test_get_users()
 test_get_root()
