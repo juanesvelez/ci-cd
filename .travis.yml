@@ -8,7 +8,6 @@ services:
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y libssl-dev
-  - sudo apt-get upgrade -y libssl-dev
   - docker-compose up -d
   - sleep 10
 
