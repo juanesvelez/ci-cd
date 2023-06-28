@@ -1,6 +1,6 @@
 import requests
 
-base_url = "http://backend:3000"  # Cambia la URL base si es necesario
+base_url = "http://localhost:3000"  # Cambia la URL base si es necesario
 
 def test_get_root():
     url = f"{base_url}/"

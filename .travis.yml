@@ -13,7 +13,7 @@ before_install:
   - sleep 10
 
 install:
-  - pip install -r backend/test/requirements.txt
+  - docker exec -it backend pip install -r test/requirements.txt
 
 script:
-  - python backend/test/server.test.py
+  - docker exec -it backend python test/server.test.py
