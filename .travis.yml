@@ -13,7 +13,7 @@ before_install:
   - sleep 10
 
 install:
-  - docker-compose exec -T backend pip install -r test/requirements.txt
+  - docker exec -it ci-cd-backend-1 pip install -r test/requirements.txt
 
 script:
-  - docker-compose exec -T backend python test/server.test.py
+  - docker exec -it ci-cd-backend-1 python test/server.test.py
