@@ -9,5 +9,8 @@ before_install:
   - docker-compose up -d
   - sleep 10
 
+install:
+  - pip install -r backend/test/requirements.txt
+
 script:
   - python backend/test/server.test.py
