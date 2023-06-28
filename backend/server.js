@@ -26,6 +26,11 @@ db.connect((err) => {
     console.log('Conectado a la base de datos MySQL');
 });
 
+// Ruta principal
+app.get('/', (req, res) => {
+    res.send('Welcome to the API');
+});
+
 // Ruta de registro
 app.post('/register', (req, res) => {
     const { email, password } = req.body;
@@ -99,8 +104,29 @@ app.post('/login', (req, res) => {
     });
 });
 
+// Ruta para obtener todos los usuarios (método GET)
+app.get('/users', (req, res) => {
+    const getUsersQuery = 'SELECT id, email FROM Users';
+    db.query(getUsersQuery, (err, results) => {
+        if (err) {
+            console.error('Error al obtener los usuarios:', err);
+            return res.status(500).json({ error: 'Error de servidor' });
+        }
+
+        const users = results.map(user => ({
+            id: user.id,
+            email: user.email
+        }));
+
+        res.json(users);
+    });
+});
+
+
 // Iniciar el servidor
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`El servidor está corriendo en el puerto ${port}`);
 });
+
+module.exports = app;
