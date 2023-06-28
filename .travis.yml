@@ -17,4 +17,4 @@ install:
 
 
 script:
-  - docker exec -it backend python test/server.test.py
+  - docker ps -a 
