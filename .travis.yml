@@ -12,9 +12,5 @@ before_install:
   - docker-compose up -d
   - sleep 10
 
-install:
-  - docker exec -it backend pip install -r test/requirements.txt
-
-
 script:
   - docker ps -a 
