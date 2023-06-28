@@ -2,6 +2,7 @@ version: '3'
 services:
 ## Backend
   backend:
+    container_name: backend
     build:
       context: ./backend  # Ruta al directorio del backend
       dockerfile: Dockerfile
