@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 # Copiamos el archivo package.json al contenedor
 COPY package*.json ./
 
+
+RUN apt-get update && apt-get install -y python3-pip
+
 # Instalamos las dependencias de la aplicación
 RUN npm install
 
