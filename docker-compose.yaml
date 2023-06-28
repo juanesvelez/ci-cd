@@ -2,6 +2,7 @@ version: '3'
 services:
 ## Backend
   backend:
+    container_name: backend
     build:
       context: ./backend  # Ruta al directorio del backend
       dockerfile: Dockerfile
@@ -29,19 +30,19 @@ services:
       - my-network
 
  ## Jenkins 
-  jenkins:
-    image: jenkins/jenkins:lts
-    privileged: true
-    user: root
-    ports:
-     - 8080:8080
-     - 50000:50000
-    container_name: jenkins
-    volumes:
-      - ./infra/:/var/jenkins_home
-      - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      - my-network
+#  jenkins:
+#    image: jenkins/jenkins:lts
+#    privileged: true
+#    user: root
+#    ports:
+#     - 8080:8080
+#     - 50000:50000
+#    container_name: jenkins
+#    volumes:
+#      - ./infra/:/var/jenkins_home
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    networks:
+#      - my-network
 
 ## Network
 networks:

@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 # Copiamos el archivo package.json al contenedor
 COPY package*.json ./
 
+
+RUN apt-get update
+
 # Instalamos las dependencias de la aplicación
 RUN npm install
 
